@@ -11,7 +11,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 62.50%;
-    background-color:#eeecec;
+    background-color:#f0f0f0;
 }
 :root{
     --button-color:#5A20CB;
@@ -37,12 +37,28 @@ a{
 .text-center{
     text-align: center;
 }
+/* header section  */
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.header-section h1{
+    font-size:1.5rem;
+}
+.header-icon .fas{
+    font-size:1.5rem;
+    margin-left: 20px;
+
+}
 
 /* hero section  */
 .hero-section{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 80px;
 
 }
 .hero-title{
@@ -79,12 +95,15 @@ a{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
+    margin-bottom: 80px;
+    
 }
 .collection{
     width: 300px;
     padding: 20px;
     background-color: rgb(253, 253, 253);
     border-radius: 10px;
+    
 
 }
 .collection-title{
@@ -103,8 +122,11 @@ a{
 i.fas.fa-star {
     color: orange;
 }
-i.fas.fa-star:nth-last-child(2){
-    color: #d4cfcf;
+
+i.fas.fa-star:nth-last-child(2)::after{
+    content: "";
+    padding-left: 3px;
+    
 }
 .Rating-points span{
     font-weight: 600;
@@ -115,4 +137,56 @@ i.fas.fa-star:nth-last-child(2){
     color: #868686;
 }
 
+/* secour camera section  */
+.secour-cam-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.secour-cam-img img{
+    width: 500px;
+    border-radius: 10px;
+}
+.secour-cam-title{
+    width: 50%;
+}
+.secour-cam-title h1{
+    font-size:2rem;
+    font-weight: 600;
 
+}
+.secour-cam-title p{
+    font-size:.9rem;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+/* footer  */
+#footer{
+    width: 100%;
+   text-align: center;
+   background-color: rgb(31, 29, 29);
+   color: white;
+   padding: 30px 0px;
+
+}
+#footer h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+#footer span{
+    font-size: .8rem;
+    
+}
+#footer p{
+    font-size: .8rem;
+    margin-top: 5px;
+    
+}
+#footer .fab{
+    font-size: 1.5rem;
+    padding-top: 5px;
+    margin: 8px;
+}
